@@ -55,3 +55,28 @@ def logaritmo_natural(x):
     return math.log(x)
 
 # GABRIEL BAZUALDO ROJAS
+
+def suma_matrices(matriz1, matriz2):
+    if len(matriz1) != len(matriz2) or len(matriz1[0]) != len(matriz2[0]):
+        return "las matirces deben tener el mismo tamaño"
+
+    filas = len(matriz1)
+    columnas = len(matriz1[0])
+    
+    resultado = []
+    for i in range(filas):
+        fila_resultado = []
+        for j in range(columnas):
+            fila_resultado.append(matriz1[i][j] + matriz2[i][j])
+        resultado.append(fila_resultado)
+    return resultado
+
+if __name__ == "__main__":
+    filas = int(input("Numero de filas de las matrices: "))
+    columnas = int(input("Numero de columnas de las matrices: "))
+    print("Escribe cada fila con los numeros separados por espacio (ej: 1 2 3)")
+    matriz_a = [list(map(float, input(f"Matriz A - Fila {i+1}: ").split())) for i in range(filas)]
+    matriz_b = [list(map(float, input(f"Matriz B - Fila {i+1}: ").split())) for i in range(filas)]
+    print("Resultado de la suma:", suma_matrices(matriz_a, matriz_b))
+
+# VICENTE SILVESTRE VELASQUEZ 
