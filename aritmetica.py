@@ -35,3 +35,8 @@ def factorial(n):
     return resultado
     
 # DIEGO RAFAEL MANCILLA FLORES
+
+def resta(a, b):
+    return a - b
+
+# DYANA VILLARROEL CHOQUE
