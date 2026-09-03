@@ -55,3 +55,26 @@ def logaritmo_natural(x):
     return math.log(x)
 
 # GABRIEL BAZUALDO ROJAS
+
+def division(dividendo, divisor):
+    if divisor == 0:
+        return "No se puede dividir entre cero"
+    
+    cociente = dividendo // divisor
+    residuo = dividendo % divisor
+    
+    return cociente, residuo
+
+if __name__ == "__main__":
+    a = int(input("Ingresa el dividendo (entero): "))
+    b = int(input("Ingresa el divisor (entero): "))
+    
+    resultado = division(a, b)
+    
+    if isinstance(resultado, str):
+        print(resultado)
+    else:
+        cociente, residuo = resultado
+        print(f"Cociente: {cociente}, Residuo: {residuo}")
+
+# HEIDY JHAEL FLORES TIÑINI
