@@ -35,3 +35,18 @@ def factorial(n):
     return resultado
     
 # DIEGO RAFAEL MANCILLA FLORES
+
+
+# ROMAN ZEBALLOS DYLAN ROBERTO
+numero = float(input("Ingresa el número al que deseas sacarle la raíz: "))
+indice = float(input("Ingresa el índice de la raíz (ej: 2 para cuadrada, 3 para cúbica): "))
+if numero < 0 and indice % 2 == 0:
+    import cmath
+    resultado = cmath.sqrt(numero) if indice == 2 else numero ** (1 / indice)
+    print(f"El resultado es un número complejo: {resultado}")
+else:
+    resultado = numero ** (1 / indice)
+    print(f"La raíz {indice} de {numero} es: {resultado}")
+
+
+
