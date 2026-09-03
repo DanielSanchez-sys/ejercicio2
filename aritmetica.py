@@ -44,3 +44,14 @@ def suma(a, b):
     return a + b 
 
 # DAYANA IBARRA ZARATE
+
+def logaritmo_natural(x):
+    if not isinstance(x, (int, float)):
+        return "El valor debe ser un número"
+
+    if x <= 0:
+        return "El logaritmo natural solo está definido para números positivos"
+
+    return math.log(x)
+
+# GABRIEL BAZUALDO ROJAS
