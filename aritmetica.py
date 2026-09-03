@@ -35,3 +35,8 @@ def factorial(n):
     return resultado
     
 # DIEGO RAFAEL MANCILLA FLORES
+
+def suma(a, b):
+    return a + b 
+
+# DAYANA IBARRA ZARATE
