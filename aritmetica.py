@@ -40,3 +40,7 @@ def resta(a, b):
     return a - b
 
 # DYANA VILLARROEL CHOQUE
+def suma(a, b):
+    return a + b 
+
+# DAYANA IBARRA ZARATE
