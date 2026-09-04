@@ -103,3 +103,9 @@ if __name__ == "__main__":
         print(f"Cociente: {cociente}, Residuo: {residuo}")
 
 # HEIDY JHAEL FLORES TIÑINI
+
+a = 5
+b = 3
+resultado = a * b
+print(resultado)  
+# DEYNA YARA CHOQUE LIMACHI
